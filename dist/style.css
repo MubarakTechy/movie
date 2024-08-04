@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.EVP {
+  background-image: url(/src/img/home3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-position: center;
+  animation: mubarak 5s infinite ease-in-out;
+
+  animation-name: mubarak;
+  animation-direction: alternate-reverse;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes mubarak {
+  0% {
+    background-image: url(/src/img/home2.jpg);
+  }
+  20% {
+    background-image: url(/src/img/home1.jpg);
+  }
+  40% {
+    background-image: url(scale\ 2.png);
+  }
+  60% {
+    background-image: url(/src/image/scale\ 2.png);
+    background-color: black;
+  }
+  80% {
+    background-image: url(loki\ background.png);
+    background-color: black;
+  }
+}
+.EVP2 {
+  background-image: url(/src/image/loki\ background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+}
+
+.toggle {
+  background: transparent;
+  display: flex;
+  cursor: pointer;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.toggle div {
+  background-color: white;
+  height: 2px;
+  width: 25px;
+  transition: all 0.4s ease;
+  margin-top: 5px 0;
+}
+
+.toggle.open .first {
+  transform: rotate(-45deg) translate(1px, 11px);
+  margin-right: 15px;
+}
+
+.toggle.open .second {
+  opacity: 0;
+}
+
+.toggle.open .third {
+  transform: rotate(45deg) translate(1px, -11px);
+  margin-right: 15px;
+}
+
+.hide-mobile-nav {
+  overflow: hidden;
+  position: absolute;
+  top: 15%;
+  margin-left: -20000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(9,36,74);
+  transition: all .7s ease;
+  padding: 20px;
+}
+.mobile-nav {
+  margin-left: 0px;
+}

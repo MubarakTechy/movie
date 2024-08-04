@@ -1,0 +1,14 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .EVP{
+   background-image: url(/src/image/scale\ 2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   background-color: black ; 
+   background-position: center;
+}
